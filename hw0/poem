@@ -1,1 +1,9 @@
+#include <iostream>
+using namespace std;
 
+int main ()
+{
+  cout << "Baa, baa, black sheep, have you any wool? \n";
+  cout << "Yes sir, yes sir, three bags full!";
+  return 0;
+  }
