@@ -1,3 +1,8 @@
+// Jakobe Boyd
+// CS 201X
+//2/5/20
+//This function accepts a series of positive integers and prints out the greatest value entered
+
 #include <iostream>
 #include <string>
 using namespace std;
