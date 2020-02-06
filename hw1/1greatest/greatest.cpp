@@ -9,11 +9,12 @@ using namespace std;
 
 int main()
 {
-int G=0; 
-int i;
+int G=0; //greatest value
+int i; //user input
 cout<<"Enter a sequence of positive integers, ending with zero. I will print the greatest positive number entered."<<endl;
 cin >> i;
 
+//function that sets greatest input above 1 to G/greatest
 if(i>=1){
 while(i>=1){
 cin >> i;
