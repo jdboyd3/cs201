@@ -1,3 +1,9 @@
+// Jakobe Boyd
+// CS 201X
+//2/19/20
+//This program is a corrected version of an erroneous celsius to kelvin calculator
+
+
 #include <iostream>
 #include <string>
 using namespace std;
