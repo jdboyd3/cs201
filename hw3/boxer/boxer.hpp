@@ -3,6 +3,10 @@
  * Jakobe Boyd
  *
  * 2/19/2020
+ *
+ * CS 201X
+ *
+ * This program creates a box of varying size with a string in the middle based on user input
  */
 
 
