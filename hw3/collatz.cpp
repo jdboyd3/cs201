@@ -1,18 +1,32 @@
 #include <iostream>
 using namespace std;
 
-int main() 
+int main() {
+    bool again;
+do {
+    int n;
+    cin >> n;
+
+
+if (n>=1)
 {
-    int c;
-    cin >> c;
-    while (c != 1) {
-        cout << c << " ";
-        if (c % 2 == 0) {
-            c /= 2;
+    while (n != 1) {
+        cout << n << " ";
+        if (n % 2 == 0) {
+            n /= 2;
         } else {
-            n = 3*c + 1;
+            n = 3*n + 1;
         }
     }
     cout << "1" << endl;
     return 0;
+}
+
+else
+{
+    again=1;
+    cout << "Please enter a positive integer."<<endl;
+}
+}
+while (again == 1);
 }
