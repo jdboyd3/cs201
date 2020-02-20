@@ -1,3 +1,8 @@
+// Jakobe Boyd
+// CS 201X
+//2/19/20
+//This program computes the collatz conjecture given user input
+
 #include <iostream>
 using namespace std;
 
