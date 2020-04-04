@@ -1,0 +1,27 @@
+#include<iostream>
+#include<map>
+using namespace std;
+int main(){
+                map<string,int> L_N;
+                
+                L_N.insert(pair<string, int>("A",61));
+                L_N.insert(pair<string, int>("B",54));
+                L_N.insert(pair<string, int>("C",9));
+                L_N.insert(pair<string, int>("D",12));
+                L_N.insert(pair<string, int>("E",34));
+              
+                L_N.erase("B");
+
+                map<string,int>::iterator it;
+
+                cout<<"Letter/Number"<<endl<<"----\t---"<<endl;
+
+                for(it=L_N.begin();it!=L_N.end();++it){
+                	
+                                cout<<it->first<<"\t"<<it->second<<endl;
+
+                }
+
+                return 0;
+
+}
