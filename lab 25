@@ -1,0 +1,33 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+
+{
+   cout<<"What length do you want each data set to be: ";
+   int n;
+   cin>>n;
+   
+   vector <int> dataset1(n);
+   vector <int> dataset2(n);
+  
+   cout<<"Enter numbers for data set 1: ";
+   for(int i=0;i<n;i++)
+       cin>>dataset1[i];
+       
+   cout<<"Enter numbers for data set 2: ";
+   for(int i=0;i<n;i++)
+       cin>>dataset2[i];
+
+   pair <vector<int>::iterator, vector<int>::iterator> res;
+   res = mismatch(dataset1.begin(), dataset1.end(), dataset2.begin());
+   
+   if(res.first==dataset1.end())
+       cout<<"There is no mismatch in the two data sets\n";
+   else
+   {
+       cout<<"Mismatch\n";
+       cout<<"Mismatched numbers: "<<*res.first<<" and "<<*res.second<<endl;
+   }
+  
+}
