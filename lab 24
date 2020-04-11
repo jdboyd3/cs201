@@ -1,0 +1,73 @@
+#include<iostream>
+using namespace std;
+#define LIMIT 10
+
+void initVector(int *vect, int size)
+{
+    for(int i=0;i<size;i++)
+    {
+        *(vect+i) = (rand() % 100) + 1;
+    }
+    return;
+}
+void sortVector(int *vect)
+{
+    int i,j, 
+       temp;
+            for(i=0;i<LIMIT-1;i++)
+            {          for(j=0;j<LIMIT-i-1;j++)
+                                    if(*(vect+j)> *(vect+j+1)) 
+            {  
+                temp=*(vect+j+1);
+                *(vect+j+1) = *(vect+j);
+                *(vect+j)=temp;
+            }
+            }
+            return; 
+}
+
+void reverseVector(int *vect)
+{
+    int i, 
+    temp;
+    for(i=0;i<(int)LIMIT/2;i++)
+    {   
+        temp=*(vect+i);
+                        *(vect+i)=*(vect+(LIMIT-i-1));
+                        *(vect+(LIMIT-i))=temp;
+    }
+    return; 
+}
+
+void displayVector(int *vect)
+{   int i; 
+            for(i=0;i<LIMIT;i++)
+                        printf("%d ",*(vect+i));
+    return; 
+}
+
+int main(void)
+{
+    void displayVector(int *vect);
+    int Vector[LIMIT];
+    void sortVector(int *vect);
+    void reverseVector(int *vect);
+    void displayVector(int *vect);
+
+
+    cout<<"Initial vector: ";
+    initVector(Vector, LIMIT);
+    displayVector(Vector);
+    
+    cout<<"\nSorted vector: ";
+    sortVector(Vector);
+    displayVector(Vector);
+    
+    cout<<"\nReverse vector: ";
+    reverseVector(Vector);
+    displayVector(Vector);
+    
+    cout<<"\nFill vector: ";
+    initVector(Vector,LIMIT/2);
+    displayVector(Vector);
+}
