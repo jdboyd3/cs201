@@ -1,6 +1,8 @@
-//
-// main.cpp
-//
+// Jakobe Boyd
+// CS 201X
+//4/11/20
+//This program creates histograms
+//main.cpp
 #include <iostream>
 #include <iomanip>
 #include <string>
