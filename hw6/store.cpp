@@ -1,3 +1,9 @@
+// Jakobe Boyd
+// CS 201X
+//4/11/20
+//This program creates a shopping cart for the user
+//shop.cpp
+
 #include <map>
 #include <algorithm>
 #include <iostream>
