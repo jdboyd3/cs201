@@ -1,0 +1,65 @@
+// printtime.cpp  INCOMPLETE
+// Glenn G. Chappell
+// 20 Apr 2018
+//
+// For CS 201 Spring 2018
+// Time of Day Class & Program
+//
+// Modified 11/28/18 for CS 201 Fall 2018
+// Chris Hartman
+
+#include <iostream> 
+using namespace std; 
+
+class Time { 
+
+private:
+            int _hr; 
+            int _min; 
+            int _sec;
+   
+public:
+
+Time(){
+            _hr=23;
+            _min=30;
+            _sec=10;
+            
+         	}      
+	Time(int hours, int minutes, int seconds){
+	
+            _hr=hours;
+            _min=minutes;
+            _sec=seconds;
+              
+            }      
+
+void print() const 
+	{
+		cout<<"Current Time: "<<_hr<<":"<<_min<<":"<<_sec;   }};
+    
+int main() 
+{ 
+    cout << "Here are some times:" << endl;
+    cout << endl;
+
+    Time t1;
+    cout << "Time #1: [";
+    t1.print();
+    cout << "]"<< endl; 
+    cout << endl; 
+
+
+    Time t2(15,22,30); 
+    cout << "Time #2: [";
+    t2.print();
+    cout << "]" << endl;
+    cout<<endl; 
+    
+    
+    cout << "PRESS ENTER to quit ";
+    while (cin.get() != '\n') ;
+    
+return 0;
+
+ }
